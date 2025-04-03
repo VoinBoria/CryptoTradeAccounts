@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #00008b, #add8e6);
+    background: linear-gradient(to right, #00008b, #add8e6); 
 }
 
 header {
@@ -14,7 +15,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, text-shadow 0.3s ease;
@@ -38,7 +39,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
@@ -59,13 +60,47 @@ section h2, section p {
     margin: 0;
     padding: 1rem 0;
     color: #fff;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Додаємо стиль для заголовків */
+header h1, section h2 {
+    color: #ff0; /* Жовтий колір */
+    background: linear-gradient(45deg, #ff0, #ffa500); /* Градієнт */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.2); /* 3D ефект */
 }
 
 section h2:hover, section p:hover {
     transform: perspective(500px) rotateX(10deg);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Стиль для контейнера зображення */
+.image-container {
+    text-align: right; /* Зміщення зображення вправо */
+    margin-top: -20px; /* Піднімаємо зображення під текстом */
+}
+
+.image-container img {
+    max-width: 25%; /* Зменшуємо зображення в два рази */
+    height: auto;
+    border-radius: 15px; /* Закруглюємо кути зображення */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease; /* Додаємо плавний перехід для анімації */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Збільшуємо зображення при наведенні */
+    box-shadow: none; /* Прибираємо тінь при наведенні */
+    border-radius: 15px; /* Закруглені кути при наведенні */
+}
+
+/* Додаємо відступ для секції services */
+section.move-up {
+    margin-top: -50rem; /* Відступ між секціями */
 }
 
 footer {
@@ -78,6 +113,7 @@ footer {
 
 footer p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
 }
 
 footer p:hover {
@@ -90,8 +126,9 @@ form input,
 form textarea,
 form button {
     display: block;
-    width: 100%;
+    width: 25%;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
 form input,
@@ -125,6 +162,7 @@ button {
     cursor: pointer;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, text-shadow 0.3s ease;
+    font-size: 1.2rem;
 }
 
 button:hover {
@@ -152,12 +190,13 @@ button:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    font-size: 1.2rem;
 }
 
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
