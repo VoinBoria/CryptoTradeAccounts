@@ -206,3 +206,22 @@ button:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+.accountOption {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.accountOption:hover {
+    background-color: #555;
+    transform: perspective(500px) rotateY(10deg);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
