@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTradeAccounts</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CryptoTradeAccounts</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Добро пожаловать в CryptoTradeAccounts</h2>
+        <p>Мы предлагаем лучшие аккаунты для различных бирж по конкурентным ценам.</p>
+    </section>
+
+    <section id="services">
+        <h2>Наши Услуги</h2>
+        <ul>
+            <li>Аккаунты Binance</li>
+            <li>Аккаунты Coinbase</li>
+            <li>Аккаунты Kraken</li>
+        </ul>
+        <button id="orderButton">Заказать</button>
+    </section>
+
+    <section id="testimonials">
+        <h2>Отзывы</h2>
+        <p>Здесь будут отображаться отзывы клиентов.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <form action="#" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Эл. адрес:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CryptoTradeAccounts. Все права защищены.</p>
+    </footer>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Заказ</h2>
+            <form action="#" method="POST">
+                <label for="accountType">Тип аккаунта:</label>
+                <select id="accountType" name="accountType" required>
+                    <option value="binance">Binance</option>
+                    <option value="coinbase">Coinbase</option>
+                    <option value="kraken">Kraken</option>
+                </select>
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                <button type="submit">Подтвердить заказ</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
