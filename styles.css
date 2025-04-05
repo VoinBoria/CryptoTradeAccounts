@@ -18,11 +18,9 @@ header h1 {
     font-size: 3.5rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 header h1:hover {
-    transform: perspective(500px) rotateY(10deg);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -41,11 +39,9 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.5rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav ul li a:hover {
-    transform: perspective(500px) rotateX(10deg);
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -53,7 +49,6 @@ section {
     padding: 2rem;
     margin: 2rem 0;
     color: #fff;
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 section h2, section p {
@@ -62,7 +57,6 @@ section h2, section p {
     color: #fff;
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 /* Додаємо стиль для заголовків */
@@ -75,7 +69,6 @@ header h1, section h2 {
 }
 
 section h2:hover, section p:hover {
-    transform: perspective(500px) rotateX(10deg);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -89,7 +82,6 @@ section h2:hover, section p:hover {
     max-width: 25%; /* Зменшуємо зображення в два рази */
     height: auto;
     border-radius: 15px; /* Закруглюємо кути зображення */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease; /* Додаємо плавний перехід для анімації */
 }
 
 .image-container img:hover {
@@ -108,7 +100,6 @@ footer {
     padding: 1rem 0;
     background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 footer p {
@@ -117,7 +108,6 @@ footer p {
 }
 
 footer p:hover {
-    transform: perspective(500px) rotateX(10deg);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -143,12 +133,10 @@ form button {
     padding: 0.5rem;
     border: none;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 form button:hover {
     background-color: #555;
-    transform: perspective(500px) rotateY(10deg);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -161,13 +149,10 @@ button {
     border: none;
     cursor: pointer;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    font-size: 1.2rem;
 }
 
 button:hover {
     background-color: #555;
-    transform: perspective(500px) rotateY(10deg);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -185,12 +170,20 @@ button:hover {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 0, 0.8));
+    border-radius: 15px;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    font-size: 1.2rem;
+    width: 60%; /* Вужче меню */
+    max-width: 600px; /* Максимальна ширина */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.modal-content h2 {
+    color: #fff; /* Білий колір заголовка */
 }
 
 .close {
@@ -211,17 +204,15 @@ button:hover {
     display: block;
     margin: 1rem 0;
     padding: 0.5rem 1rem;
-    background-color: #333;
+    background-color: transparent; /* Прибраний фон */
     color: #fff;
     border: none;
     cursor: pointer;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
     font-size: 1.2rem;
+    border-radius: 10px; /* Закруглені кути */
 }
 
 .accountOption:hover {
-    background-color: #555;
-    transform: perspective(500px) rotateY(10deg);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
