@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const paymentModal = document.getElementById("paymentModal");
     const closeButtons = document.querySelectorAll(".close");
     const accountOptions = document.querySelectorAll(".accountOption");
+    const copyButton = document.getElementById("copyPaymentAddress");
+    const paymentAddress = document.getElementById("paymentAddress");
+    const emailInput = document.getElementById("email");
 
     selectAccountButton.addEventListener("click", function() {
         console.log("Select account button clicked");
@@ -36,4 +39,17 @@ document.addEventListener("DOMContentLoaded", function() {
             paymentModal.style.display = "none";
         }
     });
+
+    copyButton.addEventListener("click", function() {
+        navigator.clipboard.writeText(paymentAddress.textContent)
+            .then(() => {
+                console.log("Payment address copied to clipboard");
+            })
+            .catch(err => {
+                console.error("Failed to copy payment address: ", err);
+            });
+    });
+
+    // Автовставлення пошти
+    emailInput.value = "user@example.com"; // Замість цього використовуйте фактичну логіку для отримання email користувача
 });
