@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const paymentModal = document.getElementById("paymentModal");
     const closeButtons = document.querySelectorAll(".close");
     const accountOptions = document.querySelectorAll(".accountOption");
-    const copyButton = document.getElementById("copyPaymentAddress");
     const paymentAddress = document.getElementById("paymentAddress");
     const emailInput = document.getElementById("email");
 
@@ -40,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    copyButton.addEventListener("click", function() {
+    paymentAddress.addEventListener("click", function() {
         navigator.clipboard.writeText(paymentAddress.textContent)
             .then(() => {
                 console.log("Payment address copied to clipboard");
