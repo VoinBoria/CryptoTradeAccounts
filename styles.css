@@ -180,6 +180,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
     perspective: 500px;
+    color: #fff; /* Додаємо це правило для зміни кольору шрифту */
 }
 
 .modal-content h2 {
@@ -215,4 +216,34 @@ button:hover {
 
 .accountOption:hover {
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.clickable {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.modal-content .payment-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.modal-content .payment-details {
+    flex: 1;
+}
+
+.modal-content .image-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0; /* Прибираємо відступи */
+}
+
+.modal-content .image-container .responsive-img {
+    width: 100%;
+    max-width: 255px; /* Максимальна ширина зображення */
+    height: auto; /* Автоматична висота */
+    border-radius: 10px; /* Закруглені кути */
 }
