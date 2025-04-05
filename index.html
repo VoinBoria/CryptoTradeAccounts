@@ -75,102 +75,21 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Оплата</h2>
-            <p>Адрес оплаты: <span id="paymentAddress">UQD-d3vPtKuTZQr-lniQ-hTgSqdUhoCo0jkQgZ4gyBLW6h7T</span></p>
-            <p>Сумма: <span id="paymentAmount">50 USDT</span></p>
-            <p>Сеть: <span id="paymentNetwork">TON</span></p>
-            <form action="#" method="POST">
-                <label for="email">Ваш электронный адрес:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Оплачено</button>
-            </form>
-        </div>
-    </div>
-</body>
-</html><!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoTradeAccounts</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>CryptoTradeAccounts</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#testimonials">Отзывы</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h2>Добро пожаловать в CryptoTradeAccounts</h2>
-        <p>Мы предлагаем лучшие аккаунты для различных бирж по конкурентным ценам.</p>
-        <div class="image-container">
-            <img src="images/binance.png" alt="Binance">
-        </div>
-    </section>
-
-    <section id="services" class="move-up">
-        <h2>Наши Услуги</h2>
-        <ul>
-            <li>Аккаунты Binance</li>
-            <li>Аккаунты Coinbase</li>
-            <li>Аккаунты Kraken</li>
-        </ul>
-        <button id="selectAccountButton">Выбрать аккаунт</button>
-    </section>
-
-    <section id="testimonials">
-        <h2>Отзывы</h2>
-        <p>Здесь будут отображаться отзывы клиентов.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Контакты</h2>
-        <form action="#" method="POST">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Эл. адрес:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 CryptoTradeAccounts. Все права защищены.</p>
-    </footer>
-
-    <div id="accountModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Выберите аккаунт</h2>
-            <button class="accountOption" data-account="binance">Binance</button>
-            <button class="accountOption" data-account="bybit">Bybit</button>
-            <button class="accountOption" data-account="okx">OKX</button>
-            <button class="accountOption" data-account="gateio">Gate.IO</button>
-        </div>
-    </div>
-
-    <div id="paymentModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Оплата</h2>
-            <p>Адрес оплаты: <span id="paymentAddress">UQD-d3vPtKuTZQr-lniQ-hTgSqdUhoCo0jkQgZ4gyBLW6h7T</span></p>
-            <p>Сумма: <span id="paymentAmount">50 USDT</span></p>
-            <p>Сеть: <span id="paymentNetwork">TON</span></p>
-            <form action="#" method="POST">
-                <label for="email">Ваш электронный адрес:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Оплачено</button>
-            </form>
+            <div class="payment-container">
+                <div class="payment-details">
+                    <p>Адрес оплати: <span id="paymentAddress" class="clickable">UQD-d3vPtKuTZQr-lniQ-hTgSqdUhoCo0jkQgZ4gyBLW6h7T</span></p>
+                    <p>Сумма: <span id="paymentAmount">50 USDT</span></p>
+                    <p>Сеть: <span id="paymentNetwork">TON</span></p>
+                    <form action="#" method="POST">
+                        <label for="email">Ваш электронный адрес:</label>
+                        <input type="email" id="email" name="email" required>
+                        <button type="submit">Оплачено</button>
+                    </form>
+                </div>
+                <div class="image-container">
+                    <img src="images/pass.png" alt="Pass Image" class="responsive-img">
+                </div>
+            </div>
         </div>
     </div>
 </body>
